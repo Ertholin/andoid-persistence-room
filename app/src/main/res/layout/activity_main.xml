@@ -8,7 +8,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         tools:listitem="@layout/recyclerview_item"
         android:padding="3dp"
@@ -17,13 +17,37 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+
+    <EditText
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/send"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_weight="80"
+        android:id="@+id/edit_word"
+        android:layout_width="0dp"
+        android:layout_margin="5dp"
+        android:layout_height="70dp"/>
+
+    <Button
+        app:layout_constraintTop_toTopOf="@id/edit_word"
+        app:layout_constraintBottom_toBottomOf="@id/edit_word"
+        app:layout_constraintStart_toEndOf="@id/edit_word"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:src="@drawable/ic_baseline_add_24"/>
+        app:layout_constraintHorizontal_weight="20"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_baseline_send_24"
+        android:id="@+id/send"
+        android:text="Send"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fab"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:src="@drawable/ic_baseline_add_24"/>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

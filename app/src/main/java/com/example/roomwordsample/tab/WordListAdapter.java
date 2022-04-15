@@ -16,7 +16,6 @@ public class WordListAdapter extends ListAdapter<Word, WordViewHolder> {
         super(diffCallback);
     }
 
-
     @NonNull
     @Override
     public WordViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
